@@ -33,7 +33,7 @@
 	width: 3px;
 	height: 3px;
 	/* Change background to be transparent */
-	background: transparent;
+	background: var(--dashboard-background);
 }
 
 /* Position Indicator */
