@@ -1,5 +1,7 @@
-processModal <- function(gif_location,text='Loading...'){
-  div(id='shiny-modal',class="modal",tabindex="-1",`data-backdrop`="static",`data-keyboard`="false",style="background: rgba(255,255,255,0.6);",
+processModal <- function(gif_location,text='Loading...',background_colour='#FFFFFF'){
+  background_rgb <- hex_rgb(background_colour)
+  
+  div(id='shiny-modal',class="modal",tabindex="-1",`data-backdrop`="static",`data-keyboard`="false",style=sprintf("background: rgba(%s,%s,%s,0.6);",background_rgb$r,background_rgb$g,background_rgb$b),
       div(class="modal-dialog-loading",
           div(class="modal-content-loading",
               div(class="modal-body",
@@ -10,7 +12,6 @@ processModal <- function(gif_location,text='Loading...'){
               )
           )
       ),
-      tags$script("$('#shiny-modal').modal().focus();"),
-      tags$style(paste(readLines('src/processModal.css'),collapse='\n'))
+      tags$script("$('#shiny-modal').modal().focus();")
   )
 }

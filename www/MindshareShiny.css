@@ -1,0 +1,322 @@
+/* Dark Purple - Accent */
+/* #2A1C43 */
+
+:root{ 
+  --accent-color:#2A1C43;
+  --dashboard-background: #f8f8f8;
+  --header-color: #F5F3F5;
+  --navbar-color: #F5F3F5;
+  --userdropdown-background:#FFFFFF; 
+  --sidebar-background: #eceaec;
+  --sidebar-treeview-background: #e3e0e3;
+  --toggle-sidebar-color: #727272;
+  --toggle-sidebar-background: #F5F3F5;
+  --toggle-sidebar-hover-background: #F5F3F5;
+  --toggle-sidebar-hover-color: #727272;
+  --selected-sidebar-background: transparent;
+  --selected-sidebar-color: #000000;
+  --not-selected-sidebar-background: transparent;
+  --not-selected-sidebar-color: #727272;
+  --box-border-color: #d2d6de;
+  --selected-tab-color:#2A1C43;
+  --selected-tab-background:#FFFFFF;
+  --selected-tab-border-color: #d2d6de;
+  --not-selected-tab-color:#a8abb1;
+  --not-selected-tab-background:transparent;
+  --process-modal-tile-background: white;
+}
+
+/* CHROME BROWSER EDITS */
+
+/* Change scrollbar dimensions */
+::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+	/* Change background to be transparent */
+	background: transparent;
+}
+
+/* Position Indicator */
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-color);
+}
+
+/* PROCESS MODAL */
+
+.modal-dialog-loading {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 80vh
+      }
+
+.modal-body {
+	position: relative;
+	padding: 15px;
+	background: var(--process-modal-tile-background);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.modal-content-loading {
+	width: 160px;
+	height: 160px;
+}
+
+/* Process Tile */
+
+.bodyframe {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.v-app-loading {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.v-app-loading__loading-tile {
+	text-align: center;
+	/* Added by to work with the modal loading */
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+.v-app-loading__loading-tile img {
+	width: 96px;
+	height: auto;
+	display: block;
+	margin: 0 auto 0.7rem;
+}
+
+.v-app-loading__loading-tile span {
+	font-family: ProximaBold, Arial;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #727272;
+}
+
+/* HEADER */
+
+.skin-blue .main-header {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.skin-blue .main-header .logo {
+	background-color: var(--header-color);
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Logo when hovered */
+
+.skin-blue .main-header .logo:hover {
+	background-color: var(--header-color);
+}
+
+
+/* Navbar */
+.skin-blue .main-header .navbar {
+	background-color: var(--navbar-color);
+}
+
+
+/* User Dropdown */
+.dropdown-toggle {
+	background: transparent;
+	height:50px;
+	overflow-y: visible;
+	overflow-x: visible;
+}
+.user-name {
+	color: #404040;
+}
+
+.main-header .navbar .nav .open>a,
+.main-header .navbar .nav .open>a:focus,
+.main-header .navbar .nav .open>a:hover,
+.main-header .navbar .nav>.active>a,
+.main-header .navbar .nav>li>a:active,
+.main-header .navbar .nav>li>a:focus,
+.main-header .navbar .nav>li>a:hover {
+	background: var(--userdropdown-background);
+}
+
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    position: absolute;
+    right: 0%;
+    left: auto;
+    border: 1px solid #ddd;
+    background: var(--userdropdown-background);
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-body {
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+    border-top-width: 0px
+    /* border-top: 1px solid #ddd; */
+}
+
+/* toggle sidebar button when hovered  */
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+	background-color: var(--toggle-sidebar-hover-background);
+	color: var(--toggle-sidebar-hover-color);
+	/*display: none;	/*If we want to force the sidebar then this removes the button*/
+
+}
+
+/* toggle sidebar button  */
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+	color: var(--toggle-sidebar-color);
+  background-color: var(--toggle-sidebar-background);
+/* display: none; /*If we want to force the sidebar then this removes the button*/
+}
+
+/* SIDEBAR */
+
+.skin-blue .main-sidebar {
+	background-color: var(--sidebar-background);
+	box-shadow: inset -3px 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.control-label {
+  color: var(--not-selected-sidebar-color);
+  font-weight: normal;
+}
+
+/* Active selected tab in the sidebarmenu */
+
+.skin-blue .main-sidebar .sidebar .sidebar-menu .active a {
+	background-color: var(--selected-sidebar-background);
+	color: var(--selected-sidebar-color);
+	border-left-color: var(--accent-color);
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+	margin: 0px;
+	background: var(--sidebar-treeview-background);
+  box-shadow: inset -3px 3px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Other tabs in the sidebarmenu */
+
+.skin-blue .main-sidebar .sidebar .sidebar-menu a {
+	background-color: var(--not-selected-sidebar-background);
+	color: var(--not-selected-sidebar-color);
+}
+
+/* Other tabs in the sidebarmenu when hovered */
+
+.skin-blue .main-sidebar .sidebar .sidebar-menu a:hover {
+	background-color: var(--not-selected-sidebar-background);
+	color: var(selected-sidebar-color);
+	border-left-color: var(--accent-color);
+}
+
+
+/* BODY */
+.content-wrapper,
+.right-side {
+	background-color: var(--dashboard-background);
+}
+
+/* PAGE SCROLLBAR MANAGEMENT */
+
+/* Makes sure the scrollbar for content starts below the header. If you change the header height then you need to change this */
+.header {
+	/*  position: fixed;*/
+	height: 50px;
+}
+
+:root {
+	height: auto;
+}
+
+.content {
+	overflow-y: hidden;
+}
+
+/* The last part of this is within the ui in shiny - $('body').addClass('fixed') */
+
+/* SELECTIZE DROPDOWN WINDOW */
+
+/* It would appear that with some of the edits we have made the selectize window can be cut off, we can manage that here.*/
+
+.selectize-dropdown, .selectize-dropdown.form-control{
+    max-height: 9.5vh !important;
+}
+
+.selectize-dropdown-content{
+    max-height: 9vh !important;
+}
+
+/* BOXES */
+
+/* Box */
+.box {
+	box-shadow: 0 1px rgba(0, 0, 0, .1);
+	border-radius: 2px;
+	border-top-color: var(--box-border-color);
+}
+
+/* Tab Boxes */
+
+.nav-tabs-custom {
+  /* Makes the background of the tab box transparent*/
+	background: #fff0;
+	box-shadow: 0 1px rgba(0, 0, 0, .1);
+}
+
+.nav-tabs-custom .nav-tabs {
+	border-bottom-color: #FFFFFF;
+}
+
+.nav-tabs-custom .nav-tabs li.active {
+	border-top-color: var(--selected-tab-border-color);
+	border-radius: 2px;
+}
+
+/* Selected Tab */
+.nav-tabs-custom .nav-tabs li.active:hover a,
+.nav-tabs-custom .nav-tabs li.active a {
+	color: var(--selected-tab-colour);
+	background-color: var(--selected-tab-background);
+	border-color: transparent;
+}
+
+/* Non-Selected Tabs */
+.nav-tabs-custom .nav-tabs li:hover a {
+	color: var(--selected-tab-colour);
+	/* Sets the background of non-active tabs to transparent */
+	background-color: var(--not-selected-tab-background);
+	border-color: transparent;
+}
+
+.nav-tabs-custom .nav-tabs li a {
+	color: var(--not-selected-tab-color);
+	/* Sets the background of non-active tabs to transparent */
+	background-color: var(--not-selected-tab-background);
+	border-color: transparent;
+}
+
+
