@@ -89,16 +89,8 @@ server<- function(input,output,session){
   })
   
   output$mainUI <- renderUI({
-    # showModal(processModal(gif_location = 'MSLoading.gif','Starting up...'))
-    # fluidPage(
-    #   column(width=12,
-    #        box(title='Solid Header',solidHeader = TRUE),
-    #        box(title='Test',solidHeader = FALSE)
-    # ),
-    # column(width=12,
-    #        tabBox(tabPanel('a'),tabPanel('b')))
-    # )
     if(!flags$launched){
+    # showModal(processModal(gif_location = 'MSLoading.gif','Starting up...'))
       showModal(processModal('MSLoading.gif','Loading...'))
     }else{
       fluidPage(
