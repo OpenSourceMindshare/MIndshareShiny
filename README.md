@@ -13,7 +13,7 @@ To cite this project please use: <br> <i>\"Mindshare (2019) - Simon Wallace. Ope
 
 We have created a parameterised CSS file (./www/MindshareShiny.css) that file alters shiny dashboard's default blue skin and has been created to try and make clear which aspects of the dashboard's appearance we are changing. It is not a comprehensive css file and some elements might need further customisation.
 
-## Functionss
+## Functions
 Within this template we demonstrate different functions (./Functions) that we use within shiny applications: 
 
 <b>1) Process Modal</b> <br> A modal that we can use to display the session is busy to prevent inputs, especially useful when combined with promises. 
