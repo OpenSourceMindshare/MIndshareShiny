@@ -111,7 +111,7 @@ server<- function(input,output,session){
                   ),
                   scrollableBox(
                     title='Using this template',
-                    HTML("You are free to use this template and associated functions as you want, however we ask that you cite this project accordingly. <br><br> To cite this project please use: \n \"Mindshare (2019) - Simon Wallace. Open Source Mindshare: Shiny Dashboard Template, Formatting, and Functions. https://github.com/OpenSourceMindshare/MindshareShiny\""),
+                    HTML("You are free to use this template and associated functions as you want, however we ask that you cite this project accordingly. <br><br> To cite this project please use: \n \"Mindshare (2019). Open Source Mindshare: Shiny Dashboard Template, Formatting, and Functions. https://github.com/OpenSourceMindshare/MindshareShiny\""),
                     
                      width=6,height = '200px'
                   ),
