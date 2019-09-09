@@ -7,7 +7,7 @@ These files can be found within this repository and their use is encouraged, all
 
 ## Referencing
 
-To cite this project please use: <br> <i>\"Mindshare (2019) - Simon Wallace. Open Source Mindshare: Shiny Dashboard Template, Formatting, and Functions. https://github.com/OpenSourceMindshare/MindshareShiny"</i>
+To cite this project please use: <br> <i>\"Mindshare (2019). Open Source Mindshare: Shiny Dashboard Template, Formatting, and Functions. https://github.com/OpenSourceMindshare/MindshareShiny"</i>
 
 ## CSS
 
